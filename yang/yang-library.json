@@ -1,0 +1,13 @@
+{
+    "ietf-yang-library:modules-state": {
+        "module-set-id": "1",
+        "module": [
+            {
+                "name": "network-device",
+                "revision": "",
+                "namespace": "urn:example:network-device",
+                "conformance-type": "implement"
+            }
+        ]
+    }
+}

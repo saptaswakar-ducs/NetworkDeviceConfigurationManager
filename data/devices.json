@@ -1,0 +1,11 @@
+{
+    "devices": [
+        {
+            "id": "dev001",
+            "hostname": "Router-1",
+            "management-ip": "192.168.1.10",
+            "vendor": "Cisco",
+            "device-type": "router"
+        }
+    ]
+}

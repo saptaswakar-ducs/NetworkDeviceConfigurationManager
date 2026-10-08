@@ -1,0 +1,49 @@
+module network-device {
+
+    namespace "urn:example:network-device";
+    prefix "nd";
+
+    organization
+        "Beginner YANG Network Device Manager";
+
+    description
+        "A simple YANG model for managing network devices.";
+
+    container devices {
+
+        list device {
+
+            key "id";
+
+            leaf id {
+                type string;
+                mandatory true;
+            }
+
+            leaf hostname {
+                type string;
+                mandatory true;
+            }
+
+            leaf management-ip {
+                type string;
+                mandatory true;
+            }
+
+            leaf vendor {
+                type string;
+                mandatory true;
+            }
+
+            leaf device-type {
+                type enumeration {
+                    enum router;
+                    enum switch;
+                    enum firewall;
+                }
+
+                mandatory true;
+            }
+        }
+    }
+}
